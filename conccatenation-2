@@ -1,0 +1,10 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int a=50;
+		int b=90;
+		int c=a+b;
+		System.out.println("sum of two no. a & b is " +c);
+
+	}
+}
