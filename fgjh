@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+    	int  p = 99;
+    	if(p==100){
+    	    System.out.println("Your Grade is A+");
+    	} else if(p>=90 && p<100) {
+            System.out.println("Your grade is A");
+    	} else if(p>=75 && p<60) {
+    	    System.out.println("Your grade is B+");
+    	} else if(p>=33 && p<60) {
+    	    System.out.println("Your grade is C");
+    	} else if(p>=0 && p<33){
+    	    System.out.println("Your grade is F");
+    	} else {
+    	    System.out.println("Invalid Value Entered of Percentage");
+    	}
+    }
+}
