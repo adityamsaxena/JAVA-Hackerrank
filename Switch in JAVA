@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    	System.out.println("Enter Day (1-7)");
+        System.out.println("\tFor Monday: 1\n\tFor Tuesday:2\n\tFor Wednesday:3\n\tFor Thursday: 4\n\tFor Friday:5\n\tFor Saturday:6\n\tFor Sunday :7:7\n");
+    	Scanner scan=new Scanner(System.in);
+    	int day=scan.nextInt();
+    	switch(day)
+    	{
+    	          case 1:
+    	          {
+    	              System.out.println("First day of week");
+    	              break;
+    	          }
+    	          case 2:
+    	          {
+    	               System.out.println("Second day of week");
+    	               break;
+    	          }
+    	          case 3:
+    	          {
+    	              System.out.println("Third day of week");
+    	              break;
+    	          }
+    	          case 4:
+    	          {
+    	              System.out.println("Fourth day of week");
+    	              break;
+    	          }
+    	          case 5:
+    	          {
+    	              System.out.println("Fifth day of week");
+    	              break;
+    	          }
+    	          case 6:
+    	          {
+    	              System.out.println("Sixth day of week");
+    	              break;
+    	          }
+    	          case 7:
+    	          {
+    	              System.out.println("Seventh day of week");
+    	              break;
+    	          }
+    	          default:
+    	          {
+    	              System.out.println("Invalid Entery");
+    	              break;
+    	          }
+    	 }
+	}
+}
