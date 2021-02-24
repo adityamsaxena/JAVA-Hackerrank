@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int point = 1;
+	    int p=10;
+	    while( p>0){
+    		System.out.println("41 x "+point+" : "+(41*point));
+    		p--;
+    		point++;
+	        
+	    }
+	}
+}
