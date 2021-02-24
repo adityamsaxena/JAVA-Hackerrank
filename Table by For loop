@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int point = 1;
+	    for(int p=10; p>0; p--){
+    		System.out.println("5 x "+point+" : "+(5*point));
+    		point++;
+	        
+	    }
+	}
+}
