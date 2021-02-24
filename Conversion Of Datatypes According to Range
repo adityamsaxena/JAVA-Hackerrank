@@ -1,0 +1,10 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int a=123456789;
+	    int b=999999999;
+	    long c=(long)(a+b);
+		System.out.println("sum of a&b:" +c);
+	}
+}
