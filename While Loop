@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int time=0;
+	    while (time<=4){
+	    System.out.println("Enter A"); 
+	    time++;
+	    }
+
+	}
+}
