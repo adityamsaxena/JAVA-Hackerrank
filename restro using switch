@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int starter, maincourse, dessert;
+	    Scanner scan = new Scanner(System.in);
+		System.out.println("Welcome to Aditya Da Dhaba");
+		System.out.println("Address: B-62/63/64, LIG Square, Indore (M.P.)");
+		System.out.println("Place Your Order From");
+		System.out.println("1. starter");
+		System.out.println("2. main Course");
+		System.out.println("3. dessert");
+		Scanner scanStarter = new Scanner(System.in);
+		starter=scanStarter.nextInt();
+		Scanner scanMaincourse = new Scanner(System.in);
+		maincourse=scanMaincourse.nextInt();
+		Scanner scanDessert = new Scanner(System.in);
+		dessert=scanDessert.nextInt();
+	    System.out.println("Menu of Starter: Chilli Paneer-Rs.100/-\n Papad-Rs.25/-\n Salid-Rs.15/-");
+	    System.out.println("Enter cp for CP\n: pd for PPD\n: sld for Salid\n");
+	    String mainstarter=scan.next();
+	    switch(mainstarter){
+	        case "cp": {
+	                System.out.println("Chilli Paneer-Rs.100/-\n");
+	                break;
+	        }
+	        case "pd":{
+	                System.out.println("Papad-Rs.25/-\n");
+	                break;
+	        }
+	        case "sld":{
+	                System.out.println("Salid-Rs.15/-\n");
+	                break;
+	        }
+	        default:{
+	                System.out.println("Sorry Not Available\n");
+	        }
+	    }
+	        
+	    
+	}
+}
