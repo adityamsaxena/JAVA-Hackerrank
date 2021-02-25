@@ -1,0 +1,85 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int first = 0;
+	    int starter = 0,starterQty = 0,starterPrice = 0;
+	    int maincourse = 0,maincourseQty = 0,maincoursePrice = 0;
+	    int dessert = 0,dessertQty = 0,dessertPrice = 0;
+        Scanner scan = new Scanner(System.in);
+		System.out.println("______________________TIME PASS DHABA_________________________________");
+	    System.out.println("ADRESS: INDORE HIGH WAY ");
+	    System.out.println("what you want :");
+	    System.out.println("\t1. Starter ");
+	    System.out.println("\t2. Maincourse ");
+	    System.out.println("\t3. Dessert");
+        first = scan.nextInt();
+	    if(first==1){
+	        System.out.println("You selected Starters :\nWe have in Starters :");
+	        System.out.println("\t1. Chilli panner - 100");
+	        System.out.println("\t2. Papad - 30");
+	        System.out.println("\t3. Salad - 20");
+	       starter = scan.nextInt();
+	       if(starter==1){
+	           starterPrice = 100;
+	           System.out.println("\t\tEnter Qty for Chilli panner :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Chilli panner is : "+starterQty+"\nTotal Amount for Chilli panner : " +starterQty*starterPrice );
+	       } else if(starter==2){
+	           starterPrice = 30;
+	           System.out.println("Enter Qty for Papad :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Papad is : "+starterQty+"\nTotal Amount for Papad : " +starterQty*starterPrice );
+	       } else if(starter==3){
+	           starterPrice = 20;
+	           System.out.println("Enter Qty for Salad :");
+	           starterQty = scan.nextInt();
+	           System.out.println("Total Qty of Salad is : "+starterQty+"\nTotal Amount for Salad : " +starterQty*starterPrice );
+	       } else {
+	           System.out.println("Wrong Entry in Starters..!!");
+	       }
+	       
+	    }else if(first==2){
+	        System.out.println("we have in Main-Course:");
+	        System.out.println("\t1. Dal");
+	        System.out.println("\t2. Roti");
+	        System.out.println("\t3. Sabji");
+	    }else if(first==3){
+	        System.out.println("we have in Dessert:");
+	        System.out.println("\t1. GJ - 20");
+	        System.out.println("\t2. IC - 30");
+	    } else {
+	        System.out.println("Wrong entry..!!");
+	    }
+	    System.out.println("\n\n\n\nBilling : ");
+	    System.out.println("1. Starters : ");
+	    if(starter==1){
+	        System.out.println("\tTotal Qty of Chilli panner is : "+starterQty+"\n\tTotal Amount for Chilli panner : " +starterQty*starterPrice );
+	    } else if(starter==2){
+	        System.out.println("\tTotal Qty of Papad is : "+starterQty+"\n\tTotal Amount for Papad : " +starterQty*starterPrice );
+	    } else if(starter==3){
+	        System.out.println("\tTotal Qty of Salad is : "+starterQty+"\n\tTotal Amount for Salad : " +starterQty*starterPrice );
+	    } else {
+	        System.out.println("Nothing Selected in Starters..!!");
+	    }
+	    System.out.println("2. Main-Course : ");
+	    if(maincourse==1){
+	        System.out.println("\tTotal Qty of Chilli panner is : "+maincourseQty+"\n\tTotal Amount for Chilli panner : " +maincourseQty*maincoursePrice );
+	    } else if(maincourse==2){
+	        System.out.println("\tTotal Qty of Papad is : "+maincourseQty+"\n\tTotal Amount for Papad : " +maincourseQty*maincoursePrice );
+	    } else if(maincourse==3){
+	        System.out.println("\tTotal Qty of Salad is : "+maincourseQty+"\n\tTotal Amount for Salad : " +maincourseQty*maincoursePrice );
+	    } else {
+	        System.out.println("Nothing Selected in Main-Course..!!");
+	    }
+	    System.out.println("3. Dessert : ");
+	    if(dessert==1){
+	        System.out.println("\tTotal Qty of GJ is : "+dessertQty+"\n\tTotal Amount for GJ : " +dessertQty*dessertPrice );
+	    } else if(dessert==2){
+	        System.out.println("\tTotal Qty of IC is : "+dessertQty+"\n\tTotal Amount for IC : " +dessertQty*dessertPrice );
+	    } else {
+	        System.out.println("Nothing Selected in Dessert..!!");
+	    }
+	    System.out.println("Total Amount to pay: " +((starterQty*starterPrice)+(maincourseQty*maincoursePrice)+(dessertQty*dessertPrice)));
+	}
+}
