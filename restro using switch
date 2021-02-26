@@ -2,7 +2,9 @@ import java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
-	    int starter, maincourse, dessert;
+	    int first =0,starter=0, maincourse=0, dessert=0;
+	    int starterQty=0, maincourseQty=0, dessertQty=0;
+	    int starterPrice=0, maincoursePrice=0, dessertPrice=0; 
 	    Scanner scan = new Scanner(System.in);
 		System.out.println("Welcome to Aditya Da Dhaba");
 		System.out.println("Address: B-62/63/64, LIG Square, Indore (M.P.)");
@@ -10,33 +12,80 @@ public class Main
 		System.out.println("1. starter");
 		System.out.println("2. main Course");
 		System.out.println("3. dessert");
-		Scanner scanStarter = new Scanner(System.in);
-		starter=scanStarter.nextInt();
-		Scanner scanMaincourse = new Scanner(System.in);
-		maincourse=scanMaincourse.nextInt();
-		Scanner scanDessert = new Scanner(System.in);
-		dessert=scanDessert.nextInt();
-	    System.out.println("Menu of Starter: Chilli Paneer-Rs.100/-\n Papad-Rs.25/-\n Salid-Rs.15/-");
-	    System.out.println("Enter cp for CP\n: pd for PPD\n: sld for Salid\n");
-	    String mainstarter=scan.next();
-	    switch(mainstarter){
-	        case "cp": {
-	                System.out.println("Chilli Paneer-Rs.100/-\n");
-	                break;
-	        }
-	        case "pd":{
-	                System.out.println("Papad-Rs.25/-\n");
-	                break;
-	        }
-	        case "sld":{
-	                System.out.println("Salid-Rs.15/-\n");
-	                break;
-	        }
-	        default:{
-	                System.out.println("Sorry Not Available\n");
-	        }
-	    }
-	        
-	    
+		first=scan.nextInt();
+		switch(first){
+		    case 1:{
+		        System.out.println("Menu of Starter:\n   Chilli Paneer-Rs.100/-\n   Papad-Rs.25/-\n   Salid-Rs.15/-");
+        	    System.out.println("Enter \n   1. for CP  \n   2. for PPD\n   3. for Salid\n");
+        	    starter=scan.nextInt();
+        	    switch(starter){
+        	        case 1: {
+        	            System.out.println("Chilli Paneer-Rs.100/-\n");
+        	            System.out.println("Enter Qty for Chilli Paneer\n");
+        	            starterQty=scan.nextInt();
+        	            starterPrice=100;
+                        System.out.println("Total Qty of Chilli paneer is : "+starterQty+"\nTotal Amount for Chilli panner : " +starterQty*starterPrice );	                
+                        break;
+        	        }
+        	        case 2:{
+        	            System.out.println("Papad-Rs.25/-\n");
+        	            System.out.println("Enter Qty for Papad\n");
+        	            starterQty=scan.nextInt();
+        	            starterPrice=25;
+                        System.out.println("Total Qty of Papad is : "+starterQty+"\nTotal Amount for Papad : " +starterQty*starterPrice );		                
+                        break;
+        	        }
+        	        case 3:{
+        	            System.out.println("Salad-Rs.15/-\n");
+        	            System.out.println("Enter Qty for Salad\n");
+        	            starterQty=scan.nextInt();
+        	            starterPrice=15;
+                        System.out.println("Total Qty of Salad is : "+starterQty+"\nTotal Amount for Salad : " +starterQty*starterPrice );		                
+        	            break;
+        	        }
+        	        default:{
+        	           System.out.println("Sorry Not Available\n");
+        	           break;
+        	        }
+        	    }
+        	    break;
+		    }
+		    case 2:{
+        	    System.out.println("Sorry Not Available\n");
+		        break;
+		    }
+		    case 3:{
+		        System.out.println("Menu of Dessert:\n   Gulab Jamun-Rs.20/-\n   Ice-Cream-Rs.30/-");
+        	    System.out.println("Enter \n   1. for Gulab Jamun  \n   2. for Ice-Cream\n");
+        	    dessert=scan.nextInt();
+        	    switch(dessert){
+        	        case 1: {
+        	            System.out.println("Gulab Jamun-Rs.20/-\n");
+        	            System.out.println("Enter Qty for Gulab Jamun\n");
+        	            dessertQty=scan.nextInt();
+        	            dessertPrice=20;
+                        System.out.println("Total Qty of Gulab Jamun is : "+dessertQty+"\nTotal Amount for Chilli panner : " +dessertQty*dessertPrice );	                
+                        break;
+        	        }
+        	        case 2:{
+        	            System.out.println("Ice-Cream Rs.30/-\n");
+        	            System.out.println("Enter Qty for Ice-Cream\n");
+        	            dessertQty=scan.nextInt();
+        	            dessertPrice=30;
+                        System.out.println("Total Qty of Ice-Cream is : "+dessertQty+"\nTotal Amount for Ice-Cream : " +dessertQty*dessertPrice );		                
+                        break;
+        	        }
+        	        default:{
+        	           System.out.println("Sorry Not Available\n");
+        	           break;
+        	        }
+        	    }
+		        break;
+		    }
+		    default:{
+		        System.out.println("Sorry Not Available\n");
+		        break;
+		    }
+		}
 	}
 }
