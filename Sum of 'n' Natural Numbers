@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int i, sum=0;
+	    int limit;
+	    Scanner scan=new Scanner(System.in);
+	    limit=scan.nextInt();
+	    for(i=0; i<=limit; i++)
+	    {
+	        sum=sum+i;
+	}
+	 System.out.println("Sum of n Natural Numbers:" +sum);
+	}
+}
