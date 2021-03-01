@@ -1,0 +1,415 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int first = 0, starter = 0, maincourse = 0, dessert = 0;
+
+        int starterQty = 0, maincourseQty = 0, dessertQty = 0;
+
+        int starterPrice = 0, maincoursePrice = 0, dessertPrice = 0;
+
+        int dal = 0, dalPrice = 0, dalQty = 0;
+
+        int sabji = 0, sabjiPrice = 0, sabjiQty = 0;
+        int paneer = 0, paneerPrice = 0, paneerQty = 0;
+        int aaloo = 0, bhindi = 0;
+
+        int roti = 0, rotiPrice = 0, rotiQty = 0;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Welcome to Aditya Da Dhaba");
+
+        System.out.println("Address: B-62/63/64, LIG Square, Indore (M.P.)");
+
+        System.out.println("Place Your Order From");
+
+        System.out.println("1. starter");
+
+        System.out.println("2. main Course");
+
+        System.out.println("3. dessert");
+
+        first = scan.nextInt();
+
+        switch (first) {
+
+            case 1:
+                {
+                    System.out.println("Menu of Starter:\n   Chilli Paneer-Rs.100/-\n   Papad-Rs.25/-\n   Salid-Rs.15/-");
+                    System.out.println("Enter \n   1. for CP  \n   2. for PPD\n   3. for Salid\n");
+                    starter = scan.nextInt();
+                    switch (starter) {
+                        case 1:
+                            {
+                                System.out.println("Chilli Paneer-Rs.100/-\n");
+                                System.out.println("Enter Qty for Chilli Paneer\n");
+                                starterQty = scan.nextInt();
+                                starterPrice = 100;
+                                System.out.println("Total Qty of Chilli paneer is : " + starterQty + "\nTotal Amount for Chilli panner : " + starterQty * starterPrice);
+                                break;
+                            }
+                        case 2:
+                            {
+                                System.out.println("Papad-Rs.25/-\n");
+                                System.out.println("Enter Qty for Papad\n");
+                                starterQty = scan.nextInt();
+                                starterPrice = 25;
+                                System.out.println("Total Qty of Papad is : " + starterQty + "\nTotal Amount for Papad : " + starterQty * starterPrice);
+                                break;
+                            }
+                        case 3:
+                            {
+                                System.out.println("Salad-Rs.15/-\n");
+                                System.out.println("Enter Qty for Salad\n");
+                                starterQty = scan.nextInt();
+                                starterPrice = 15;
+                                System.out.println("Total Qty of Salad is : " + starterQty + "\nTotal Amount for Salad : " + starterQty * starterPrice);
+                                break;
+                            }
+                        default:
+                            {
+                                System.out.println("Sorry Not Available\n");
+                                break;
+                            }
+                    }
+                    break;
+                }
+            case 2:
+                {
+                    System.out.println("Menu of Maincourse:\n 1.Dal\n 2.Sabji\n 3.Roti\n  4.Rice\n");
+                    maincourse = scan.nextInt();
+                    switch (maincourse) {
+                        case 1:
+                            {
+                                System.out.println("You Entered for Dal");
+                                System.out.println("Dal Menu:\n 1.Arhar Dal\n 2.Moong Dal\n 3.Urad Dal\n 4. Chana Dal\n");
+                                dal = scan.nextInt();
+                                switch (dal) {
+
+                                    case 1:
+                                        {
+
+                                            System.out.println("Arhar Dal Rs.120/-\n");
+
+                                            System.out.println("Enter Qty for Arhar Dal\n");
+
+                                            dalQty = scan.nextInt();
+
+                                            dalPrice = 120;
+
+                                            System.out.println("Total Qty of Arhar Dal is : " +
+                                                dalQty +
+                                                "\nTotal Amount for Arhar Dal : " +
+                                                dalQty * dalPrice);
+
+                                            break;
+
+                                        }
+
+                                    case 2:
+                                        {
+
+                                            System.out.println("moong Dal Rs.100/-\n");
+
+                                            System.out.println("Enter Qty for Moong Dal\n");
+
+                                            dalQty = scan.nextInt();
+
+                                            dalPrice = 100;
+
+                                            System.out.println("Total Qty of Moong Dal is : " +
+                                                dalQty +
+                                                "\nTotal Amount for Moong Dal : " +
+                                                dalQty * dalPrice);
+
+                                            break;
+
+                                        }
+
+                                    case 3:
+                                        {
+
+                                            System.out.println("Urad Dal Rs.100/-\n");
+
+                                            System.out.println("Enter Qty for Urad Dal\n");
+
+                                            dalQty = scan.nextInt();
+
+                                            dalPrice = 100;
+
+                                            System.out.println("Total Qty of Urad Dal is : " +
+                                                dalQty +
+                                                "\nTotal Amount for Urad Dal : " +
+                                                dalQty * dalPrice);
+
+                                            break;
+
+                                        }
+
+                                    case 4:
+                                        {
+
+                                            System.out.println("Chana Dal Rs.125/-\n");
+
+                                            System.out.println("Enter Qty for Chana Dal\n");
+
+                                            dalQty = scan.nextInt();
+
+                                            dalPrice = 125;
+
+                                            System.out.println("Total Qty of Chana Dal is : " +
+                                                dalQty +
+                                                "\nTotal Amount for Chana Dal : " +
+                                                dalQty * dalPrice);
+
+                                            break;
+
+                                        }
+
+                                    default:
+                                        {
+
+                                            System.out.println("Sorry Not Available\n");
+
+                                            break;
+
+                                        }
+
+                                }
+
+                            }
+                        case 2:
+                            {
+                                System.out.println("You Entered For Sabji\n");
+
+                                System.out.println("Sabji Menu:\n 1.Paneer\n 2.Aloo\n 3.Bhindi\n");
+
+                                sabji = scan.nextInt();
+
+                                switch (sabji) {
+                                    case 1:
+                                        {
+                                            System.out.println("Paneer\n");
+                                            System.out.println("1.BPM- Rs.125/-\n 2.PB- Rs. 110/-\n 3.MP- Rs.110/-");
+                                            paneer = scan.nextInt();
+                                            switch (paneer) {
+                                                case 1:
+                                                    {
+                                                        System.out.println("BPM\n");
+                                                        System.out.println("Enter Qty.for BPM\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 125;
+                                                        System.out.println("Total Qty of BPM is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for BPM  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+                                                    }
+                                                case 2:
+                                                    {
+                                                        System.out.println("PB\n");
+                                                        System.out.println("Enter Qty.for PB\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 110;
+                                                        System.out.println("Total Qty of PB is : " +
+                                                            sabjiQty + "\nTotal Amount for PB  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+
+
+                                                    }
+                                                case 3:
+                                                    {
+                                                        System.out.println("MP\n");
+                                                        System.out.println("Enter Qty.for MP\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 110;
+                                                        System.out.println("Total Qty of MP is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for MP  : " +
+                                                            sabjiQty * sabjiPrice);
+
+                                                        break;
+
+
+                                                    }
+
+
+                                            }
+                                        }
+                                    case 2:
+                                        {
+                                            System.out.println("Aaloo\n");
+                                            System.out.println("1.Aaloo Jeera- Rs.70/-\n 2.Dum Aaloo- Rs. 80/-\n 3.Fried Aaloo- Rs.75/-");
+                                            aaloo = scan.nextInt();
+                                            switch (aaloo) {
+                                                case 1:
+                                                    {
+                                                        System.out.println("Aaloo Jeera\n");
+                                                        System.out.println("Enter Qty.for Aaloo Jeera\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 70;
+                                                        System.out.println("Total Qty of Aaloo Jeera is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for Aaloo Jeera  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+                                                    }
+                                                case 2:
+                                                    {
+                                                        System.out.println("Dum Aaloo\n");
+                                                        System.out.println("Enter Qty.for Dum Aaloo\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 80;
+                                                        System.out.println("Total Qty of Dum Aaloo is : " +
+                                                            sabjiQty + "\nTotal Amount for Dum Aaloo  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+
+
+                                                    }
+                                                case 3:
+                                                    {
+                                                        System.out.println("Fried Aaloo\n");
+                                                        System.out.println("Enter Qty.for Fried Aaloo\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 75;
+                                                        System.out.println("Total Qty of Fried Aaloo is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for Fried Aaloo  : " +
+                                                            sabjiQty * sabjiPrice);
+
+                                                        break;
+
+                                                    }
+                                            }
+                                        }
+                                    case 3:
+                                        {
+                                            System.out.println("Bhindi\n");
+                                            System.out.println("1.Crispy Bhindi- Rs.90/-\n 2.Masala Bhindi- Rs.100/-\n 3.Plain Bhidi- Rs.80/-");
+                                            bhindi = scan.nextInt();
+                                            switch (bhindi) {
+                                                case 1:
+                                                    {
+                                                        System.out.println("Crispy Bhindi\n");
+                                                        System.out.println("Enter Qty.for Crispy Bhindi\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 90;
+                                                        System.out.println("Total Qty of Crispy Bhindi is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for Crispy Bhindi  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+                                                    }
+                                                case 2:
+                                                    {
+                                                        System.out.println("Masala Bhindi\n");
+                                                        System.out.println("Enter Qty.for Masala Bhindi\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 100;
+                                                        System.out.println("Total Qty of Masala Bhindi is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for Masala Bhindi  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+                                                    }
+                                                case 3:
+                                                    {
+                                                        System.out.println("Plain Bhidi\n");
+                                                        System.out.println("Enter Qty.for Plain Bhidi\n");
+                                                        sabjiQty = scan.nextInt();
+                                                        sabjiPrice = 80;
+                                                        System.out.println("Total Qty of Plain Bhidi is : " +
+                                                            sabjiQty +
+                                                            "\nTotal Amount for Plain Bhidi  : " +
+                                                            sabjiQty * sabjiPrice);
+                                                        break;
+                                                    }
+                                            }
+                                        }
+
+                                }
+                            }
+                        case 3:
+                            {
+                                System.out.println("Roti\n");
+                                System.out.println("1.Tawa Roti- Rs.8/-\n 2. Tandoori Roti- Rs.10/-\n 3.Naan- Rs.20/-");
+                                roti = scan.nextInt();
+                                switch (roti) {
+                                    case 1:
+                                        {
+                                            System.out.println(".Tawa Roti\n");
+                                            System.out.println("Enter Qty.for Tawa Roti\n");
+                                            rotiQty = scan.nextInt();
+                                            rotiPrice = 8;
+                                            System.out.println("Total Qty of Tawa Roti is : " +
+                                                rotiQty +
+                                                "\nTotal Amount for Tawa Roti  : " +
+                                                rotiQty * rotiPrice);
+                                            break;
+                                        }
+                                    case 2:
+                                        {
+                                            System.out.println("Tandoori Roti\n");
+                                            System.out.println("Enter Qty.for Tandoori Roti\n");
+                                            sabjiQty = scan.nextInt();
+                                            sabjiPrice = 10;
+                                            System.out.println("Total Qty of Tandoori Roti is : " + rotiQty + "\nTotal Amount for Tandoori Roti  : " + rotiQty * rotiPrice);
+
+                                            break;
+                                        }
+                                    case 3:
+                                        {
+                                            System.out.println("Naan\n");
+                                            System.out.println("Enter Qty.for Naan\n");
+                                            rotiQty = scan.nextInt();
+                                            rotiPrice = 20;
+                                            System.out.println("Total Qty of Naan is : " + rotiQty + " Naan  : " + rotiQty * rotiPrice);
+
+                                            break;
+                                        }
+                                }
+                            }
+                    }
+
+                }
+
+            case 3:
+                {
+                    System.out.println("Menu of Dessert:\n   Gulab Jamun-Rs.20/-\n   Ice-Cream-Rs.30/-");
+                    System.out.println("Enter \n   1. for Gulab Jamun  \n   2. for Ice-Cream\n");
+                    dessert = scan.nextInt();
+                    switch (dessert) {
+                        case 1:
+                            {
+                                System.out.println("Gulab Jamun-Rs.20/-\n");
+                                System.out.println("Enter Qty for Gulab Jamun\n");
+                                dessertQty = scan.nextInt();
+                                dessertPrice = 20;
+                                System.out.println("Total Qty of Gulab Jamun is : " + dessertQty + "\nTotal Amount for Chilli panner : " + dessertQty * dessertPrice);
+                                break;
+                            }
+                        case 2:
+                            {
+                                System.out.println("Ice-Cream Rs.30/-\n");
+                                System.out.println("Enter Qty for Ice-Cream\n");
+                                dessertQty = scan.nextInt();
+                                dessertPrice = 30;
+                                System.out.println("Total Qty of Ice-Cream is : " + dessertQty + "\nTotal Amount for Ice-Cream : " + dessertQty * dessertPrice);
+                                break;
+                            }
+                        default:
+                            {
+                                System.out.println("Sorry Not Available\n");
+                                break;
+                            }
+                    }
+                    break;
+                }
+        }
+    }
+}
