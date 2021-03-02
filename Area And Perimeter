@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int length,breadth;
+	   Scanner scan = new Scanner(System.in);
+	    System.out.println("Enter length :");
+	    length=scan.nextInt();
+	    System.out.println("Enter breadth :");
+	    breadth=scan.nextInt();
+	    if(length==breadth)
+	    {
+	        System.out.println("It's square");
+	    }else{
+	        System.out.println("It's rectangle");
+	    }
+	    System.out.println("Area is :" +(length*breadth));
+	    System.out.println("Perameter is :"+(2*(length+breadth)));
+
+	}
+}
