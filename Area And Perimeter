@@ -14,7 +14,7 @@ public class Main
 	    }else{
 	        System.out.println("It's rectangle");
 	    }
-	    System.out.println("Area is :" +(length*breadth));
+	    System.out.println("Area i2s :" +(length*breadth));
 	    System.out.println("Perameter is :"+(2*(length+breadth)));
 
 	}
