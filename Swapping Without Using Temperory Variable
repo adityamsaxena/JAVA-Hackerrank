@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int a,b;
+	    Scanner scan=new Scanner(System.in);
+	    System.out.println("Enter the Value of 'a'");
+	    a=scan.nextInt();
+	    System.out.println("Enter the Value of 'b'");
+	    b=scan.nextInt();
+	    a=a+b;
+	    b=a-b;
+	    a=a-b;
+	    System.out.println("Value of 'a' & 'b' after swapping");
+		  System.out.println("a="+(+a));
+	    System.out.println("b="+(+b));
+
+	}
+}
