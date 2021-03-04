@@ -1,0 +1,13 @@
+public class Main{
+    public static void main(String[] args){
+        int i,j;
+        aditya:
+                for(i=0; i<=4; i++){
+                    for(j=0; j<=4; j++){
+                        if(i==1)
+                            continue aditya;
+                        System.out.println("i="+i+"j="+j);
+                    }
+                }
+    }
+}
