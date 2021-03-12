@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    int a[]={1,2,3,4,5,6,7,8,9,10};
+    int c,length=0,i,sum=0,mul=1;
+   c=a.length;
+   for(i=0;i<c;i++){
+
+       sum=sum+a[i];
+       mul=mul*a[i];
+   }
+        System.out.println("Sum of array is:"+sum);
+        System.out.println("Multiplication of array is:"+mul);
+        System.out.println("Length of Array is:"+c);
+
+
+	}
+}
