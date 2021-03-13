@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int a[][]={
+	        {1,2,3,4},
+	        {5,6,7},
+	        {8,9,10},
+	        {11,12,13,14},
+	        {5}
+	    };
+		System.out.println("column 1:"+a[0].length);
+		System.out.println("column 2:"+a[1].length);
+		System.out.println("column 3:"+a[2].length);
+		System.out.println("column 4:"+a[3].length);
+	  System.out.println("column 5:"+a[4].length);
+	  System.out.println("rows:"+a.length);
+
+
+	}
+}
