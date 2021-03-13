@@ -1,0 +1,31 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int c,i,j,k,sum=0, length=0, mul=1;
+	    int a[][][]={
+	        {
+	            {1,2},
+	            {2,3},
+	            {3,4},
+	        },
+	        {
+	            {5,6},
+	            {7,8},
+	            {9,10}
+	            
+	        }
+	    };
+		c=a.length;
+        for(i=0;i<c;i++){
+              for(j=0;j<a[i].length;j++){
+                  for(k=0; k<a[i][j].length; k++){
+                sum = sum + a[i][j][k];
+                mul = mul * a[i][j][k];
+              }
+           }
+	   }
+	       System.out.println("Sum of Elements in Array is:"+sum);
+	   	   System.out.println("Multiplication of Elements in array is:"+mul);
+	      
+    }
+}
