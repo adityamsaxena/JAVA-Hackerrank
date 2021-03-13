@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int c,j,i,sum=0, length=0, mul=1;
+	    int a[][]={
+	        {1,2,3,4,5},
+	        {1,2}
+	    };
+		c=a.length;
+        for(i=0;i<c;i++){
+              for(j=0;j<a[i].length;j++){
+                sum = sum + a[i][j];
+                mul = mul * a[i][j];
+              }
+
+	   }
+	       System.out.println("Sum of Elements in Array is:"+sum);
+	   	   System.out.println("Multiplication of Elements in Array is:"+mul);
+	       System.out.println("No. of Rows:"+c);
+	       System.out.println("Column 1:"+a[0].length);
+	       System.out.println("Column 2:"+a[1].length);
+    }
+}
