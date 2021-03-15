@@ -1,0 +1,48 @@
+import java.util.*;
+public class Main
+{
+    int a=23;
+    void printF(String msg){
+        System.out.println("Inside PrintF function : "+msg);
+    }
+    int mul(int b, int c)
+    {
+        return b*c;
+    }
+    int sum(int b, int c)
+    {
+        return b+c;
+    }
+    int sub(int b, int c)
+    {
+        return b-c;
+    }
+    float div(float b, float c)
+    {
+        return b/c;
+    }
+    float mod(float b, float c)
+    {
+        return b%c;
+    }
+	public static void main(String[] args) {
+        Scanner scan =new Scanner(System.in);
+        Main abc = new Main();
+        System.out.println(abc.a);
+        //System.out.println("Inside Main function : Aditya Saxena");
+        abc.printF("Aditya Saxena");
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        System.out.println("Multiplication " + (b*c));
+        abc.printF( (b*c) + "");
+        System.out.println("Addition " + abc.mul(b,c));
+        abc.printF( (b+c) + "");
+        System.out.println("Subtraction " + abc.mul(b,c));
+        abc.printF( (b-c) + "");
+        System.out.println("Division " + abc.sum(b,c));
+	      abc.printF( (b/c) + "");
+        System.out.println("Modulus " + abc.mod(b,c));
+        System.out.println("Inside Main function " + (b%c));
+        abc.printF( (b%c) + "");
+	}
+}
