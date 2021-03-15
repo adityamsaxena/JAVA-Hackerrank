@@ -1,0 +1,22 @@
+public class Main
+{
+    int a=5;
+    void printF(String msg){
+        System.out.println("Inside PrintF function : "+msg);
+    }
+    void sum(int b, int c)
+    {
+        System.out.println("Inside SUM function"+(b+c));
+    }
+	public static void main(String[] args) {
+        Main abc = new Main();
+        System.out.println(abc.a);
+        System.out.println("Inside Main function : Aditya and Rakesh");
+        abc.printF("Aditya and Rakesh");
+        int b = 5;
+        int c = 6;
+        System.out.println("Inside Main function"+(b+c));
+        abc.printF((b+c)+"");
+        abc.sum(b,c);
+	}
+}
