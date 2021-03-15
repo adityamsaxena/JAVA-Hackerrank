@@ -1,0 +1,14 @@
+public class Main
+{
+    int a=5;
+    void printF()
+    {
+    System.out.println("Aditya Saxena");
+}
+	public static void main(String[] args) {
+		Main aadi = new Main();
+		System.out.println(aadi.a);
+		aadi.printF();
+
+	}
+}
