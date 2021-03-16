@@ -1,0 +1,26 @@
+public class Main   
+{  
+  public static void main(String args[])  
+  {  
+    int i,j, n=0,  temp;  
+    int a[] = {11,2,31,-4,5};
+    n = a.length;
+    for(i=0; i<n; i++)
+    {
+        
+        for(j=i+1; j<n; j++)
+        {
+          if(a[i]>a[j]){
+              temp = a[i];
+              a[i] = a[j];
+              a[j] = temp;
+          } 
+        }
+    }
+    for(i=0; i<n; i++)
+    {
+        
+        System.out.println(a[i]);
+    }
+  }
+}
