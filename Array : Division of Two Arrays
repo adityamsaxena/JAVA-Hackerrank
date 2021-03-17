@@ -1,0 +1,19 @@
+public class Main   
+{  
+  public static void main(String args[])  
+  {  
+    int i, j, n, key = 0,tmp;  
+    int a[] = {44,8,60,4,100};
+    int b[] = {22,4,6,3,10};
+    float c[] = new float[a.length];
+    n = a.length;
+    for(i=0; i<n; i++)
+    {
+        c[i] = a[i] / b[i];
+    }
+    for(i=0; i<n; i++)
+    {
+        System.out.println(c[i]);
+    }
+  }
+}
