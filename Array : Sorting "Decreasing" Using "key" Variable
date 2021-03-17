@@ -1,0 +1,29 @@
+public class Main   
+{  
+  public static void main(String args[])  
+  {  
+    int i, j, n, key = 0,tmp;  
+    int a[] = {11,2,31,4,5};
+    int c[] = new int[a.length];
+    n = a.length;
+    for(i=0; i<n; i++)
+    {
+        key = a[i];
+        for(j=i+1; j<n; j++)
+        {
+          if(a[i]<a[j]){
+            key = a[j];
+            tmp = a[i];
+            a[i] = a[j];
+            a[j] = tmp;
+          } 
+        }
+        c[i] = key;
+    }
+    for(i=0; i<n; i++)
+    {
+        
+        System.out.println(c[i]);
+    }
+  }
+}
